@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Panel</h1>
+        <button onclick="editRoom()">Edit a Room</button>
+        <button onclick="makeRoom()">Make a Room</button>
+        <div id="roomManagement" style="display:none;">
+            <label for="roomCodeAdmin" class="visually-hidden">Room Code</label>
+            <input type="text" id="roomCodeAdmin" placeholder="Room Code">
+            <button onclick="manageRoom()">Manage Room</button>
+        </div>
+        <div id="roomDetails" style="display:none;">
+            <h2>Room Details</h2>
+            <h3>People Inside:</h3>
+            <ul id="insideListAdmin"></ul>
+            <h3>Check-in History:</h3>
+            <ul id="historyListAdmin"></ul>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
