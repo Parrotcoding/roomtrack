@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restroom Survey</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Restroom Survey</h1>
+        <div id="roomCodeSection">
+            <label for="roomCode" class="visually-hidden">Room Code</label>
+            <input type="text" id="roomCode" placeholder="Enter Room Code">
+            <button onclick="enterRoom()">Enter Room</button>
+        </div>
+        <div id="surveySection" style="display:none;">
+            <ul id="insideList" aria-live="polite">
+                <!-- List of people inside will be dynamically generated here -->
+            </ul>
+            <label for="checkInName" class="visually-hidden">Check-in with your name</label>
+            <input type="text" id="checkInName" placeholder="Check-in with your name">
+            <button onclick="checkIn()">Check In</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
