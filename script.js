@@ -51,7 +51,7 @@ function checkOut(index) {
     if (rating) {
         const person = rooms[currentRoom].inside.splice(index, 1)[0];
         const timestamp = new Date().toLocaleString('en-US', { dateStyle: 'full', timeStyle: 'long' });
-        const suspiciousActivity = prompt("Report any suspicious activity (leave blank if none):");
+        const suspiciousActivity = prompt("Report any suspicious activity or unclean environments. (leave blank if none):");
         rooms[currentRoom].history.push({ 
             name: person.name, 
             rating: rating, 
